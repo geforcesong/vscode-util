@@ -11,13 +11,17 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:util.sort"
+        "onCommand:util.sort",
+        "onCommand:util.sortDesc"
     ],
     "main": "./out/src/extension",
     "contributes": {
         "commands": [{
             "command": "util.sort",
             "title": "Sort Asc"
+        },{
+            "command": "util.sortDesc",
+            "title": "Sort Desc"
         }]
     },
     "scripts": {
