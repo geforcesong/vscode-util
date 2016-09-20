@@ -1,8 +1,8 @@
 {
     "name": "vscode-util",
     "displayName": "vscode-util",
-    "description": "This tool provides some additional functions, such as sort, trim lines...will add more",
-    "version": "0.0.1",
+    "description": "This tool provides some additional functions, such as sort, trim lines and also compute numbers in each line...will add more",
+    "version": "0.0.2",
     "publisher": "guosong",
     "engines": {
         "vscode": "^1.4.0"

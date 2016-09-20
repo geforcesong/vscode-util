@@ -14,4 +14,4 @@ Small tools in Visual Studio Code. The following types of functions are supporte
 2. Select some line texts
 3. Press F1 or (cmd+shift+p)
 4. Input each command. Such as ("sort", "trim" .. you will see the command)
-5. If you use compute, don't need select firstly, but keep a number for each line.
+5. If you use compute, don't need select firstly, but keep a number for each line. Note: non-number line will be ignored during computing.
