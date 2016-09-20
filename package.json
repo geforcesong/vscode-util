@@ -3,7 +3,7 @@
     "displayName": "vscode-util",
     "description": "This tool provides some additional functions, such as sort, trim lines...will add more",
     "version": "0.0.1",
-    "publisher": "georgeguo",
+    "publisher": "guosong",
     "engines": {
         "vscode": "^1.4.0"
     },
