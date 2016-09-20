@@ -1,7 +1,7 @@
 import * as vscode from 'vscode';
 
 export class Lines {
-    static sort(sortAlgorithm: any) {
+    static sort(sortAlgorithm?: (a:string, b:string)=> any) : void {
         let textEditor = vscode.window.activeTextEditor;
         let selection = Lines.getSelection(textEditor);
         if (!selection || selection.isSingleLine)
@@ -21,14 +21,15 @@ export class Lines {
     }
 
     static sortDesc() {
-        Lines.sort((a, b) => {
+        let compare = (a:string, b:string) : any =>{
             if (a > b)
                 return -1;
             else if (a == b)
                 return 0;
             else
                 return 1;
-        });
+        }
+        Lines.sort(compare);
     }
 
     static trimLines(removeDuplicate?: boolean) {
