@@ -3,6 +3,7 @@
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
 import {Lines} from './lines';
+import {Compute} from './compute';
 
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
@@ -12,6 +13,7 @@ export function activate(context: vscode.ExtensionContext) {
         vscode.commands.registerCommand('util.sortDesc', Lines.sortDesc),
         vscode.commands.registerCommand('util.trimLines', Lines.trimLines),
         vscode.commands.registerCommand('util.trimAndRemoveDuplicateLines', Lines.removeDuplicate),
+        vscode.commands.registerCommand('util.compute', Compute.compute)
     ];
     commands.forEach((cmd)=>{
         context.subscriptions.push(cmd);

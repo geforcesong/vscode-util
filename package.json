@@ -14,7 +14,8 @@
         "onCommand:util.sort",
         "onCommand:util.sortDesc",
         "onCommand:util.trimLines",
-        "onCommand:util.trimAndRemoveDuplicateLines"
+        "onCommand:util.trimAndRemoveDuplicateLines",
+        "onCommand:util.compute"        
     ],
     "main": "./out/src/extension",
     "contributes": {
@@ -30,6 +31,9 @@
         },{
             "command": "util.trimAndRemoveDuplicateLines",
             "title": "Trim and remove duplicate lines"
+        },{
+            "command": "util.compute",
+            "title": "Compute number of each line"
         }]
     },
     "scripts": {
