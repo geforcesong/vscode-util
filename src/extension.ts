@@ -9,8 +9,9 @@ import {Lines} from './lines';
 export function activate(context: vscode.ExtensionContext) {
     let commands = [
         vscode.commands.registerCommand('util.sort', Lines.sort),
-        vscode.commands.registerCommand('util.sortDesc', Lines.sortDesc)
-
+        vscode.commands.registerCommand('util.sortDesc', Lines.sortDesc),
+        vscode.commands.registerCommand('util.trimLines', Lines.trimLines),
+        vscode.commands.registerCommand('util.trimAndRemoveDuplicateLines', Lines.removeDuplicate),
     ];
     commands.forEach((cmd)=>{
         context.subscriptions.push(cmd);
