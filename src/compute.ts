@@ -19,7 +19,7 @@ export class Compute {
             var range = new vscode.Range(startLine, 0, endLine, textEditor.document.lineAt(endLine).text.length);
             var content = numbers.join("\n");
             content += "\n";
-            content += `Number Count is: ${numbers.length}. Total is: ${total}. Average is: ${avg}`
+            content += `Total is: ${total}. Average is: ${avg}\nComputed Number Count is: ${numbers.length}`
             builder.replace(range, content);
         });
     }
