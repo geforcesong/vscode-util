@@ -30,3 +30,6 @@ Small tools in Visual Studio Code. The following types of functions are supporte
 
 - Try compute
 ![Usage animation](images/compute.gif)
+
+
+Market Place: https://marketplace.visualstudio.com/items?itemName=guosong.vscode-util
